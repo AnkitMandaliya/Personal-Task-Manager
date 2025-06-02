@@ -30,14 +30,6 @@ function TaskForm() {
         onChange={(e) => setTask({ ...task, date: e.target.value })}
         required
       />
-      <select
-        value={task.priority}
-        onChange={(e) => setTask({ ...task, priority: e.target.value })}
-      >
-        <option>High</option>
-        <option>Medium</option>
-        <option>Low</option>
-      </select>
       <button type="submit">Add Task</button>
     </form>
   );
